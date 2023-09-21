@@ -1,10 +1,10 @@
 project:
-  name: vcr-hello-world
+  name: stream-booth
 instance:
-  name: dev
+  name: live
   runtime: nodejs16
   region: aws.euw1
-  application-id: YOUR-VONAGE-API-APPLICATION-ID
+  application-id: c3880bb9-3c07-4086-ba73-8007a7a1d06a
   entrypoint: [node, server.js]
   environment:
     - name: YOURVAR1
