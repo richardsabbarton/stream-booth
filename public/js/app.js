@@ -34,10 +34,10 @@ function getSessionCredentials(room){
 
 function getMedia(){
 
-  navigator.getUserMedia({video: {width: 1280, height: 720, facingMode: { exact: "user" }}},(ms)=>{
+  navigator.getUserMedia({video: {width: 1280, height: 720, facingMode: { ideal: "user" }}},(ms)=>{
     // Got Media Stream Track for 720p Video
     mst720p = ms.getVideoTracks()[0]
-    navigator.getUserMedia({video: {width: 640, height: 480, facingMode: { exact: "user" }}},(ms)=>{
+    navigator.getUserMedia({video: {width: 640, height: 480, facingMode: { ideal: "user" }}},(ms)=>{
       // Got Media Stream Track for 480p Video
       mst480p = ms.getVideoTracks()[0]
       console.log(mst720p, mst480p)
